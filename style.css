@@ -148,6 +148,52 @@ h4 {
   font-size: 18px;
   line-height: 1.5em;
 }
+
+.part4{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #0c1753;
+  color: white;
+}
+
+h5{
+  font-size: 20px;
+}
+
+#name,#city{
+  padding: 10px 40px 10px 25px ;
+margin: 10px 5px 10px 10px;
+}
+#email,#subject{
+  padding: 10px 297px 10px 25px ;
+  margin: 10px 10px 10px 10px;
+}
+#msg{
+  padding-left: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+#submit{
+  position: relative;
+  left: 15px;
+  color: #0c1753;
+  font-size: 30px;
+  text-align: center;
+  background-color: #ffe101;
+  border-style: solid;
+  border-color: #0c1753;
+  border-width: 1px;
+  padding: 10px 175px 10px 175px ;
+  border-radius: 10px;
+  font-weight: 600;
+  
+}
+.part4 h2{
+  padding-top: 50px;
+  max-width: 250px;
+}
+
 /* * {
     outline: solid 1px red;
 }*/
