@@ -19,6 +19,7 @@ nav {
   font-size: 25px;
   color: #0c1753;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 nav img {
@@ -26,7 +27,7 @@ nav img {
   padding-left: 30px;
 }
 
-.links li a {
+.links li a,.links2 li a {
   text-decoration: none;
 }
 
@@ -149,32 +150,35 @@ h4 {
   line-height: 1.5em;
 }
 
-.part4{
+.part4 {
   display: flex;
   justify-content: space-around;
   align-content: center;
   background-color: #0c1753;
   color: white;
+  padding-bottom: 30px;
 }
 
-h5{
+h5 {
   font-size: 20px;
 }
 
-#name,#city{
-  padding: 10px 40px 10px 25px ;
-margin: 10px 5px 10px 10px;
+#name,
+#city {
+  padding: 10px 40px 10px 25px;
+  margin: 10px 5px 10px 10px;
 }
-#email,#subject{
-  padding: 10px 297px 10px 25px ;
+#email,
+#subject {
+  padding: 10px 297px 10px 25px;
   margin: 10px 10px 10px 10px;
 }
-#msg{
+#msg {
   padding-left: 10px;
   margin: 10px 10px 10px 10px;
 }
 
-#submit{
+#submit {
   position: relative;
   left: 15px;
   color: #0c1753;
@@ -184,14 +188,44 @@ margin: 10px 5px 10px 10px;
   border-style: solid;
   border-color: #0c1753;
   border-width: 1px;
-  padding: 10px 175px 10px 175px ;
+  padding: 10px 175px 10px 175px;
   border-radius: 10px;
   font-weight: 600;
-  
 }
-.part4 h2{
+.part4 h2 {
   padding-top: 50px;
   max-width: 250px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+ background-color: hsl(253, 100%, 95%);
+ padding: 50px 30px 50px 30px;
+ text-align: center;
+
+}
+
+.links2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  padding-right: 30px;
+  font-size: 25px;
+  color: #0c1753;
+  font-weight: bolder;
+  text-decoration: none;
+ 
+}
+
+footer img {
+  max-width: 250px;
+  max-height: 150px;
+  
+  
 }
 
 /* * {
