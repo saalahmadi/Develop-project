@@ -12,7 +12,6 @@ nav {
 
 .links {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
   gap: 20px;
   padding-right: 30px;
@@ -93,12 +92,16 @@ section {
 .part2 {
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
   background-color: hsl(253, 100%, 95%);
 }
 .card-one,
 .card-two,
 .card-three {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-size: 25px;
   color: #0c1753;
   font-weight: 350;
@@ -108,13 +111,15 @@ section {
   margin-bottom: 30px;
   background-color: white;
   border-style: none;
+  min-width:270px;
+  min-height: 270px;
 }
 
 .card-service {
   background-color: #fee552;
   border-radius: 50%;
-  padding: 15px 15px 15px 15px;
-  margin: 70px 70px 70px 70px;
+  width:50%
+  
 }
 
 .card-service img {
@@ -153,29 +158,35 @@ h4 {
 .part4 {
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   background-color: #0c1753;
   color: white;
-  padding-bottom: 30px;
+  padding: 20px;
 }
 
 h5 {
   font-size: 20px;
 }
 
+
 #name,
-#city {
-  padding: 10px 40px 10px 25px;
-  margin: 10px 5px 10px 10px;
+#city{
+  padding:10px;
+  width: 35%;
+  margin:10px;
 }
+
 #email,
 #subject {
-  padding: 10px 297px 10px 25px;
-  margin: 10px 10px 10px 10px;
+  padding: 10px ;
+  width:90%;
+  margin:10px;
 }
 #msg {
-  padding-left: 10px;
-  margin: 10px 10px 10px 10px;
+  padding:10px;
+  width:90%;
+  margin:10px;
+  
 }
 
 #submit {
@@ -188,7 +199,8 @@ h5 {
   border-style: solid;
   border-color: #0c1753;
   border-width: 1px;
-  padding: 10px 175px 10px 175px;
+  padding: 10px;
+  width: 90%;
   border-radius: 10px;
   font-weight: 600;
 }
@@ -200,7 +212,6 @@ h5 {
 footer{
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
  background-color: hsl(253, 100%, 95%);
  padding: 50px 30px 50px 30px;
  text-align: center;
@@ -209,7 +220,6 @@ footer{
 
 .links2 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   list-style: none;
   gap: 20px;
@@ -244,25 +254,12 @@ font-size: 25px;
 @media screen and (max-width:800px) {
   .part2{
     flex-direction: column;
-    max-width: 300px;
     justify-content: center;
-    align-content: center;
-   /* padding-left: 250px;
-    padding-right: 250px;*/
+    align-items: center;
     
   }
   .part3-first,.part3-second,.part3-third,.part1,.part4{
     flex-direction: column;
-  }
-  form{
-    margin-left: 150px;
-  }
-  h5{
-    text-align: center;
-  }
-  .part4 h2{
-    margin-left: 200px;
-    max-width: 400px;
   }
 
   footer div h4{
@@ -279,15 +276,102 @@ font-size: 25px;
   footer img{
     max-width: 200px;
     max-height: 100px;
+
+  }
+
+  .part4 h2{
+    text-align: center;
   }
 }
 
-@media screen and(max-width:425px) {
-  body{
-    padding-left: 212.5px;
-    padding-right: 212.5px;
+@media screen and (max-width:425px) {
+ 
+  .links{
+    font-size: 13px;
+    text-align: center;
+  }
+  nav img,footer img{
+    max-width: 150px;
+    padding-left: 10px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 17px;
+  }
+  .p1,#part3 p,
+  #part3 ul,
+  #part3 ol{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #more,#submit{
+    font-size: 25px;
+  }
+  .links2{
+    font-size: 15px;
+  }
+  h6{
+    font-size: 11px;
+  }
+
+  .card-one,
+.card-two,
+.card-three {
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.card-service img {
+  max-width: 70px;
+}
+
+#name,
+#city{
+  width: 90%;
+}
+
+}
+
+@media screen and (max-width:375px) {
+  .links{
+    font-size: 11px;
+  }
+  nav img{
+    max-width: 100px;
+  }
+  #name,
+  #city{
+    width: 90%;
   }
 }
-/* * {
+
+@media screen  and (max-width:320px){
+  .links{
+    font-size: 10px;
+  }
+  h2{
+    text-align: center;
+    font-size: 20px;
+  }
+  #name,
+  #city{
+    width: 90%;
+  }
+ h5{
+   font-size: 15px;
+   text-align: center;
+ }
+}
+/* *{
     outline: solid 1px red;
 }*/
